@@ -90,7 +90,7 @@ export class PersonaController {
       let contenido = `Hola, ${persona.nombres}, su usuario para el acceso a la palicación es:
       ${persona.correo} y su contraseña es: ${clave}`;
 
-      fetch(`${Llaves.urlServicioNotificaciones}/envio-correo?correo_destino=${destino}&asunto=${asunto}&contenido=${contenido}`)
+      fetch(`https://thawing-shelf-19177.herokuapp.com/envio-correo?correo_destino=${destino}&asunto=${asunto}&contenido=${contenido}`)
       .then((data:any)=>{
           console.log(data);
       });
